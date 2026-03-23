@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Succoth Initiative Inc. – Housing Support for Black & Immigrant Communities</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS BAR -->
+<div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+<!-- BACK TO TOP BUTTON -->
+<button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+<!-- TOAST NOTIFICATION -->
+<div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+<!-- SKIP TO MAIN (accessibility) -->
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#community">Testimonials</a>
+  <a href="#faq">FAQ</a>
+  <a href="#resources">Resources</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="mobile-cta">Get Help Now →</a>
+</div>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>📍 Serving Black &amp; Immigrant Communities Across Canada</span>
+  <span>📞 <a href="tel:+18000000000">1-800-000-0000</a> &nbsp;|&nbsp; <a href="mailto:info@succothinitiative.org">info@succothinitiative.org</a></span>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <a href="#" class="logo-area" aria-label="Succoth Initiative Inc. Home">
+    <div class="logo-icon">
+      <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="14" width="6" height="14" fill="#8DC63F" rx="1"/>
+        <rect x="12" y="8" width="6" height="20" fill="#F7FAFF" rx="1"/>
+        <rect x="20" y="4" width="6" height="24" fill="#8DC63F" rx="1" opacity=".8"/>
+        <path d="M2 28 Q15 22 28 28" stroke="#8DC63F" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <circle cx="15" cy="5" r="4" stroke="#8DC63F" stroke-width="1.5" fill="none"/>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <strong>Succoth</strong>
+      <span>Initiative Inc.</span>
+    </div>
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li class="has-dropdown">
+      <a href="#services">Services</a>
+      <div class="dropdown">
+        <a href="#services">Housing Search</a>
+        <a href="#services">Tenant Rights</a>
+        <a href="#services">Workshops</a>
+        <a href="#services">Counselling</a>
+        <a href="#services">Financial Literacy</a>
+      </div>
+    </li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#community">Testimonials</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">Get Help Now →</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main id="main">
+
+  <!-- ── HERO ── -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">Housing Support &amp; Advocacy</div>
+      <h1>Stable Housing is a <em>Right</em>,<br>Not a Privilege.</h1>
+      <p class="hero-desc">
+        Succoth Initiative Inc. provides education, advocacy, and resources to help Black and immigrant communities access safe, stable housing across Canada.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-green">Find Housing Support</a>
+        <a href="#services" class="btn-outline">Explore Our Services</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-icon">🏠</div>
+        <div>
+          <h3>Rental Navigation</h3>
+          <p>We connect families to housing resources and landlords who welcome newcomers.</p>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon">📋</div>
+        <div>
+          <h3>Tenant Rights Advocacy</h3>
+          <p>Know your rights. We guide you through disputes, evictions, and rental agreements.</p>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon">🤝</div>
+        <div>
+          <h3>Community Network</h3>
+          <p>Join a growing network of families building stability and wealth in Canada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS STRIP ── -->
+  <div class="stats-strip" id="stats-strip" role="region" aria-label="Impact statistics">
+    <div class="stat">
+      <div class="stat-n" data-target="2400" data-suffix="+">0</div>
+      <div class="stat-l">Families Helped</div>
+    </div>
+    <div class="stat">
+      <div class="stat-n" data-target="12">0</div>
+      <div class="stat-l">Canadian Cities</div>
+    </div>
+    <div class="stat">
+      <div class="stat-n" data-target="98" data-suffix="%">0</div>
+      <div class="stat-l">Client Satisfaction</div>
+    </div>
+    <div class="stat">
+      <div class="stat-n" data-target="8" data-suffix=" yrs">0</div>
+      <div class="stat-l">Serving Communities</div>
+    </div>
+  </div>
+
+  <!-- ── SERVICES ── -->
+  <section id="services">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-tag">What We Do</div>
+        <h2 class="section-title">Programs &amp; Services</h2>
+        <p class="section-subtitle">Comprehensive support covering every stage of your housing journey — from pre-arrival to long-term stability.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">🏡</div>
+          <h3>Housing Search Support</h3>
+          <p>Personalized help finding safe, affordable rental housing — including connections to landlords who welcome newcomers and immigrants.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">⚖️</div>
+          <h3>Tenant Rights &amp; Advocacy</h3>
+          <p>Education on your legal rights as a tenant in Canada, guidance during disputes, and advocacy against discrimination and wrongful eviction.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">📚</div>
+          <h3>Workshops &amp; Education</h3>
+          <p>Free in-person and virtual workshops on renting in Canada, understanding leases, building credit, and moving toward homeownership.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">💬</div>
+          <h3>One-on-One Counselling</h3>
+          <p>Confidential housing counselling sessions with experienced advisors who understand the unique challenges facing Black and immigrant families.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">🏦</div>
+          <h3>Financial Literacy</h3>
+          <p>Build your credit history, open a bank account, and plan for homeownership — all the financial foundations for housing stability.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">🌐</div>
+          <h3>Settlement Connections</h3>
+          <p>Referrals to community organizations, government services, and settlement agencies to support your full transition into Canadian life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="about-section">
+    <div class="section-inner">
+      <div class="about-split">
+        <div class="about-text reveal">
+          <div class="section-tag" style="color:#8DC63F">Our Mission</div>
+          <h2 class="section-title">Built by the Community, for the Community</h2>
+          <p class="section-subtitle">Succoth Initiative Inc. was founded on the belief that every family deserves a safe place to call home — regardless of where they came from.</p>
+          <ul class="about-list">
+            <li>Education and resources tailored to Black and immigrant lived experiences</li>
+            <li>Advocacy that challenges systemic barriers in Canada's housing market</li>
+            <li>A network of trusted landlords, legal advisors, and settlement workers</li>
+            <li>A community-centred approach rooted in dignity and respect</li>
+          </ul>
+        </div>
+        <div class="about-visual reveal reveal-delay-2">
+          <div class="about-block accent">
+            <div class="about-block-num">2,400+</div>
+            <div class="about-block-label">Families Housed</div>
+          </div>
+          <div class="about-block">
+            <div class="about-block-num">12</div>
+            <div class="about-block-label">Cities Served</div>
+          </div>
+          <div class="about-block">
+            <div class="about-block-num">50+</div>
+            <div class="about-block-label">Partners</div>
+          </div>
+          <div class="about-block accent">
+            <div class="about-block-num">100%</div>
+            <div class="about-block-label">Free Services</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section id="community" class="tab-section">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-tag">Stories</div>
+        <h2 class="section-title">What Our Community Says</h2>
+        <p class="section-subtitle">Real stories from families we've supported across Canada.</p>
+      </div>
+      <div class="tabs-header" role="tablist">
+        <button class="tab-btn active" data-tab="housing" role="tab" aria-selected="true">Housing</button>
+        <button class="tab-btn" data-tab="rights" role="tab" aria-selected="false">Tenant Rights</button>
+        <button class="tab-btn" data-tab="finance" role="tab" aria-selected="false">Finance</button>
+      </div>
+
+      <div class="tab-panel active" id="tab-housing" role="tabpanel">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Succoth Initiative helped us find a landlord who understood our situation as newcomers. Within three weeks we had a safe home for our children."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div><div class="author-name">Amara O.</div><div class="author-meta">Arrived from Nigeria · Toronto, ON</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="stars">★★★★★</div>
+          <p>"I didn't know where to begin looking for housing. The team walked me through everything — the lease, my rights, even the neighbourhood. Truly life-changing."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">J</div>
+            <div><div class="author-name">Jean-Pierre M.</div><div class="author-meta">Arrived from DR Congo · Montreal, QC</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="stars">★★★★★</div>
+          <p>"After being rejected by three landlords, Succoth connected us with a welcoming landlord who gave us a fair chance. We've been here two years now."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">F</div>
+            <div><div class="author-name">Fatima K.</div><div class="author-meta">Arrived from Somalia · Calgary, AB</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-rights" role="tabpanel">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"My landlord tried to evict us illegally. Succoth's team explained our rights and helped us file a formal complaint. We kept our home and the landlord faced consequences."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">K</div>
+            <div><div class="author-name">Kwame A.</div><div class="author-meta">Ghana · Ottawa, ON</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="stars">★★★★★</div>
+          <p>"I had no idea landlords couldn't ask certain questions or refuse based on my ethnicity. The workshop opened my eyes and gave me the confidence to stand up for myself."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">N</div>
+            <div><div class="author-name">Nadia R.</div><div class="author-meta">Jamaica · Halifax, NS</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-finance" role="tabpanel">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Within 18 months of the financial literacy program, I had built enough credit to qualify for my first mortgage. I own my home now thanks to Succoth."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">E</div>
+            <div><div class="author-name">Emmanuel T.</div><div class="author-meta">Philippines · Winnipeg, MB</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="stars">★★★★★</div>
+          <p>"Starting from zero credit with no Canadian history felt impossible. Their advisor set up a clear plan. Two years later, my credit score is over 700."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div><div class="author-name">Sadia H.</div><div class="author-meta">Bangladesh · Edmonton, AB</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section id="faq">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Answers to the questions we hear most often from newcomers and their families.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Are your services free?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes — 100% of our services are completely free for individuals and families. We are a non-profit organization funded by grants, donations, and community partners. You will never be charged for any support, workshop, counselling session, or resource.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do I need to be a Canadian citizen to access your services?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No. Our services are open to all newcomers, immigrants, permanent residents, refugees, and internationally protected persons. We serve anyone who has recently arrived in Canada and needs housing support, regardless of immigration status.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can a landlord refuse to rent to me because of my background?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No. Under the Canadian Human Rights Act and provincial human rights codes, landlords cannot discriminate based on race, national or ethnic origin, colour, religion, age, sex, or family status. If you have experienced discrimination, contact us — we can help you understand your options and file a complaint.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            I have no Canadian credit history. Can I still rent an apartment?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes, though it can be challenging. We work with a network of landlords who are open to renting to newcomers without Canadian credit history. We also provide guidance on how to present your financial situation (e.g., employment letters, international credit reports, larger deposits) to strengthen your rental application.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How quickly can I get help?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We aim to respond to all requests within 1 business day. For urgent housing situations — such as risk of homelessness or illegal eviction — please call us directly and we will prioritize your case. Our team includes advisors who speak multiple languages.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer services in languages other than English?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes. We currently offer services in English, French, Amharic, Somali, Tagalog, Arabic, and Haitian Creole. Let us know your preferred language when you get in touch and we will match you with an appropriate advisor.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESOURCES ── -->
+  <section id="resources">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-tag">Learn &amp; Grow</div>
+        <h2 class="section-title">Housing Resources &amp; Guides</h2>
+        <p class="section-subtitle">Practical, plain-language guides written for our community.</p>
+      </div>
+      <div class="resources-grid">
+        <div class="resource-card reveal reveal-delay-1">
+          <div class="resource-img bg1">📄</div>
+          <div class="resource-body">
+            <div class="resource-tag">Guide · Renting</div>
+            <h3>How to Rent in Canada as a Newcomer: A Step-by-Step Guide</h3>
+            <p>Understand leases, rental applications, and your rights before signing anything.</p>
+            <a href="#" class="resource-link">Read the Guide →</a>
+          </div>
+        </div>
+        <div class="resource-card reveal reveal-delay-2">
+          <div class="resource-img bg2">⚖️</div>
+          <div class="resource-body">
+            <div class="resource-tag">Resource · Tenant Rights</div>
+            <h3>Know Your Rights: Fighting Housing Discrimination in Canada</h3>
+            <p>What the law says about discrimination, and how to report it and fight back.</p>
+            <a href="#" class="resource-link">Read the Guide →</a>
+          </div>
+        </div>
+        <div class="resource-card reveal reveal-delay-3">
+          <div class="resource-img bg3">🏦</div>
+          <div class="resource-body">
+            <div class="resource-tag">Guide · Finance</div>
+            <h3>Building Credit as a Newcomer: Your Path to Homeownership</h3>
+            <p>Start from zero and build the financial foundation you need to buy a home.</p>
+            <a href="#" class="resource-link">Read the Guide →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="contact-section">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-tag">Reach Out</div>
+          <h2 class="section-title">We're Here to Help</h2>
+          <p class="section-subtitle">Whether you need housing guidance, want to volunteer, or are looking to partner with us — get in touch. Our team responds within 1 business day.</p>
+          <div style="margin-top:36px">
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div><h4>Phone</h4><p>1-800-000-0000<br><small>Mon–Fri, 9am–5pm EST</small></p></div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div><h4>Email</h4><p>info@succothinitiative.org<br><small>We reply within 1 business day</small></p></div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div><h4>Location</h4><p>Serving communities across Canada<br><small>Remote &amp; in-person support available</small></p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal reveal-delay-2">
+          <h3>Request Housing Support</h3>
+
+          <!-- Success state (shown after form submit) -->
+          <div class="form-success" id="form-success">
+            <div class="success-icon">✅</div>
+            <h4>Request Sent!</h4>
+            <p>Thank you for reaching out. One of our advisors will contact you within 1 business day. If this is urgent, please call us directly at 1-800-000-0000.</p>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="fname">Full Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Your full name" required autocomplete="name"/>
+              <div class="field-error" id="fname-error">Please enter your full name.</div>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address *</label>
+              <input type="email" id="femail" name="femail" placeholder="you@example.com" required autocomplete="email"/>
+              <div class="field-error" id="femail-error">Please enter a valid email address.</div>
+            </div>
+            <div class="form-group">
+              <label for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" name="fphone" placeholder="e.g. 416-000-0000" autocomplete="tel"/>
+            </div>
+            <div class="form-group">
+              <label for="fcity">City / Province</label>
+              <input type="text" id="fcity" name="fcity" placeholder="e.g. Toronto, ON"/>
+            </div>
+            <div class="form-group">
+              <label for="fservice">How can we help? *</label>
+              <select id="fservice" name="fservice" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option>Housing Search Support</option>
+                <option>Tenant Rights Advice</option>
+                <option>Financial Literacy</option>
+                <option>Settlement Connections</option>
+                <option>Workshop / Event Info</option>
+                <option>Partnership Inquiry</option>
+                <option>Other</option>
+              </select>
+              <div class="field-error" id="fservice-error">Please select a service.</div>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message <span style="font-weight:400;color:var(--muted)">(max 500 chars)</span></label>
+              <textarea id="fmessage" name="fmessage" placeholder="Tell us a bit about your situation..." maxlength="500"></textarea>
+              <div class="char-counter" id="char-counter">0 / 500</div>
+            </div>
+            <button type="submit" class="btn-submit" id="submit-btn">
+              <div class="spinner"></div>
+              <span class="btn-text">Send Request →</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="footer-logo logo-area">
+        <div class="logo-icon">
+          <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="14" width="6" height="14" fill="#8DC63F" rx="1"/>
+            <rect x="12" y="8" width="6" height="20" fill="#F7FAFF" rx="1"/>
+            <rect x="20" y="4" width="6" height="24" fill="#8DC63F" rx="1" opacity=".8"/>
+            <path d="M2 28 Q15 22 28 28" stroke="#8DC63F" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <circle cx="15" cy="5" r="4" stroke="#8DC63F" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="logo-text"><strong>Succoth</strong><span>Initiative Inc.</span></div>
+      </a>
+      <p>Housing support, education, and advocacy for Black and immigrant communities building stable lives in Canada.</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Housing Search</a></li>
+        <li><a href="#services">Tenant Rights</a></li>
+        <li><a href="#services">Workshops</a></li>
+        <li><a href="#services">Counselling</a></li>
+        <li><a href="#services">Financial Literacy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#resources">Guides &amp; Articles</a></li>
+        <li><a href="#faq">Tenant Rights FAQ</a></li>
+        <li><a href="#resources">Housing Guides</a></li>
+        <li><a href="#community">Community Stories</a></li>
+        <li><a href="#contact">Partner Directory</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Organization</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Our Team</a></li>
+        <li><a href="#contact">Volunteer</a></li>
+        <li><a href="#contact">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Succoth Initiative Inc. All rights reserved. &nbsp;|&nbsp;
+    <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Use</a>
+    &nbsp;|&nbsp; Registered Non-Profit Organization
+  </div>
+</footer>
+
+<!-- JavaScript (loaded at end of body so HTML is ready first) -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
